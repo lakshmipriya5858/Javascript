@@ -1,0 +1,52 @@
+<form action="success.html">
+UserName:<input type="text" name="userName:"/>
+				<span id="userNameError"></span><br/>
+
+Password<input type="text" name="password"/>
+				<span id="PasswordError"></span><br/>
+
+		<input type="submit" value="submit" onclick="return validate()"/>
+</form>
+<script>
+function validate()
+{
+	var thisForm=document.forms[0];
+	var userName=thisForm.userName;
+	var userNameFailedStatus;
+	var v1=document.getElementById("userNameError");
+
+	if(userNameFailedStatus=(userName.value.length==0))
+	{
+v1.style.color="red";
+v1.innerHTML="enetr username";
+}
+else
+{
+v1.innerHTML="";
+
+}
+var password=thisForm.password;
+	var passwordFailedStatus;
+	var v1=document.getElementById("PasswordError");
+
+	if(passwordFailedStatus=(password.value.length==0))
+	{
+v1.style.color="red";
+v1.innerHTML="enetr password";
+}
+
+if(userNameFailedStatus)
+{
+userName.focus();
+return false;
+}
+
+else if(passwordFailedStatus)
+{
+password.focus();
+return false;
+}
+
+
+}
+</script>

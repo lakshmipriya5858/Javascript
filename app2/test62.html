@@ -1,0 +1,17 @@
+<p id="p1">initial content</p>
+<input type="button" value="populate array content" onclick="readArrayContent()"/>
+<input type="button" value="remove last element" onclick="removeLast3ElementsFromArray()"/>
+<script>
+var elements=[100,"hello",89,90.8,true];
+function readArrayContent()
+{
+document.getElementById("p1").innerHTML=elements.join(",");
+}
+function removeLast3ElementsFromArray()
+{
+elements.splice(elements.length-3,3);
+                             //from which element has to be removed -number of eelmts
+readArrayContent();
+}
+//to remove last element use splice method
+</script>

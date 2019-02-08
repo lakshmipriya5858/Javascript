@@ -1,0 +1,24 @@
+<form action="success.html" name="myForm">
+education:<select name="education" >
+           <option value="">please select</option>
+           <option value="be">BE</option>
+           <option value="mca"> MCA</option>
+           <option value="mba"> MBA</option>
+			</select><br/>
+			<input type="submit" value="submit" 	onclick="return validate()"/>
+</form>
+
+<script>
+function validate()
+{
+		var myForm=document.myform;
+		var education=myForm.skill;
+			if(education.value.length==0)
+			{
+		alert("selecg  education");
+		education.focus();
+		return false;	
+		}
+}
+
+</script>

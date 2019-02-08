@@ -1,0 +1,19 @@
+<p id="p1">initial content</p>
+from which index:<input type="text" id="newElemnt"/><br/>
+ removed:<input type="text" id="location"/><br/>
+<input type="button" value="insert new element " onclick="insertNewElementAtSpecifiedLocation()"/>
+<input type="button" value="populate array content" onclick="readArrayContent()"/>
+<script>
+var elements=[100,"hello",89,90.8,true];
+function readArrayContent()
+{
+document.getElementById("p1").innerHTML=elements.join(",");
+}
+function insertNewElementAtSpecifiedLocation()
+{
+	var newElement=document.getElementById("newElement").value;
+	var index=document.getElementById("location").value;
+elements.splice(index,0,newElement);
+readArrayContent();
+}
+</script>

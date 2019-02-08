@@ -1,0 +1,7 @@
+<script>
+function formClicked()
+{
+alert('hello to all');
+}
+</script>
+<form onclick="formClicked()">

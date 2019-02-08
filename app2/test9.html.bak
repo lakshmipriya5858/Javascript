@@ -1,0 +1,30 @@
+<form action="success.html">
+User_name<input type="text" name="User_name"/></br>
+Password<input type="text" name="Password"/></br>
+<input type="submit" 
+			value="login" 
+			onclick="return loginVerify()"/>
+</form>
+
+<script>
+function loginVerify()
+{
+		var myform=document.forms[0];
+		var User_name=myform.User_name;
+		if(User_name.value.length==0)
+		{
+		alert("pls eneter firstName");
+		User_name.focus();
+		return false;
+		}
+		var Password=myform.Password;
+		if(Password.value.length==0)
+		{
+		alert("pls eneter lastName");
+		Password.focus();
+		return false;
+		}
+		
+}
+
+</script>

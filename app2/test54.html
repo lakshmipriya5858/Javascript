@@ -1,0 +1,36 @@
+<input type="button" value="printObject" onclick="printObject()"/>
+<p id="data"></p>
+<script>
+function printObject()
+{
+				var emp={
+				firstName:"mohan",
+				lastName:"Rao",
+				project:{
+										title="Axis Bank automation",
+										duration:"5months",
+										cost:50000000
+										};
+					fullName:function()
+					{
+					return this.firstName+""+this.lastName;
+					}
+					};
+					getProject:function()
+					{
+					return this.project.title+","+
+					 this.project.duration+","+
+					 this.project.cost;
+					}
+					};
+ var empData=
+					emp.firstName+","+
+					emp.lastName+","+
+					emp.fullName()+","+
+					emp.project.title()+","+
+					emp.project.duration()+","+
+					emp.project.cost()+","+
+					emp.getProject();
+					document.getElementById("data").innerHTML=empData;
+}
+</script>

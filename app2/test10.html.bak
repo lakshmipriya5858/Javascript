@@ -1,0 +1,30 @@
+<form action="success.html">
+Email<input type="text" name="email"/></br>
+Address<textarea name="address"></textarea></br>
+<input type="submit" 
+			value="submit" 
+			onclick="return validate()"/>
+</form>
+
+<script>
+function validate()
+{
+		var myform=document.f1;
+		var email=myform.email;
+		if(email.value.length==0)
+		{
+		alert("pls eneter Username");
+		email.focus();
+		return false;
+		}
+		var address=myform.address;
+		if(address.value.length==0)
+		{
+		alert("pls eneter Password");
+		address.focus();
+		return false;
+		}
+		
+}
+
+</script>

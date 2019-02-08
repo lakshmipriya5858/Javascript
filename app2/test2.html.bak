@@ -1,0 +1,4 @@
+<form action="success.html">
+<input type="text" value="param"/></br>
+<input type="submit" value="submit"/>
+</form>

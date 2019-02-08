@@ -1,0 +1,19 @@
+<p id="p1">initial content</p>
+from which index:<input type="text" id="from"/><br/>
+elements tobe removed:<input type="text" id="total"/><br/>
+<input type="button" value="remove above specified " onclick="removeRangrOfElemnts()"/>
+<input type="button" value="populate " onclick="readArrayContent()"/>
+<script>
+var elements=[100,"hello",89,90.8,true];
+function readArrayContent()
+{
+document.getElementById("p1").innerHTML=elements.join(",");
+}
+function removeRangrOfElemnts()
+{
+	var from=document.getElementById("from").value;
+	var total=document.getElementById("total").value;
+elements.splice(from,total);
+readArrayContent();
+}
+</script>

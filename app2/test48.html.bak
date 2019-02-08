@@ -1,0 +1,27 @@
+<form>
+Firstname:<input type="text" name="firstname" onclick="trim(this)"/><br/>
+Lastname:<input type="text" value="lastname" onclick="trim(this)"/><br/>
+age:<input type="text" value="age" onclick="trim(this)"/><br/>
+</form>
+
+<script>
+function trim(element)
+{
+				var value=element.value;
+				var firstChar=value.charAt(0);
+				while(firstChar=='')
+				{
+				value=value.substring(1,value.length);
+				firstChar=value.charAt(0);
+				}
+			   var lastChar=value.charAt(value.length-1));
+				while(lastChar=='')
+				{
+				value=value.substring(0,value.length-1);
+				lastChar=value.charAt(value.length-1);
+				}
+				element.value=value;
+
+}
+//developing fun fr multiple elemnts
+</script>

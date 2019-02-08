@@ -1,0 +1,27 @@
+<p id="p1">initial content</p>
+New Element:<input type="text" id="newElement1"/><br/>
+New Element:<input type="text" id="newElement2"/><br/>
+New Element:<input type="text" id="newElement3"/><br/>
+New Element:<input type="text" id="newElement4"/><br/>
+ Location:<input type="text" id="location"/><br/>
+ tobe removed elemts count:<input type="text" id="removeTotal"/><br/>
+<input type="button" value="insert new element " onclick="insertNewElementAtSpecifiedLocation()"/>
+<input type="button" value="populate array content" onclick="readArrayContent()"/>
+
+<script>
+var elements=[100,"hello",89,90.8,true];
+function readArrayContent()
+{
+document.getElementById("p1").innerHTML=elements.join(",");
+}
+function insertNewElementAtSpecifiedLocation()
+{
+	var newElement1=document.getElementById("newElement1").value;
+	var newElement2=document.getElementById("newElement2").value;
+	var newElement3=document.getElementById("newElement3").value;
+	var newElement4=document.getElementById("newElement4").value;
+	var index=document.getElementById("location").value;
+elements.splice(index,0,newElement);
+readArrayContent();
+}
+</script>

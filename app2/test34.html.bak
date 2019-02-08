@@ -1,0 +1,21 @@
+<p id="d1">
+       I am from div<br/>
+       I am from div<br/>
+       I am from div<br/>
+	   </div>
+	   <hr/>
+	   <span id="s1">
+       I am from span<br/>
+       I am from apan<br/>
+       I am from span<br/>
+
+	   </span><br/>
+<input type="button" value="button" onclick="readParts()"/>
+
+<script>
+function readParts()
+{
+alert(document.getElementById("d1").innerHTML);
+alert(document.getElementById("d2").innerHTML);
+}
+</script>

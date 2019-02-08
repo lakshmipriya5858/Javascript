@@ -1,0 +1,30 @@
+<form action="success.html">
+First_Name:<input type="text" name="firstName"/></br>
+Last_Name:<input type="text" name="lastName"/></br>
+Age:<input type="text" name="age"/></br>
+<input type="submit" 
+			value="Registration" 
+			onclick="return validateReg()"/>
+</form>
+
+<script>
+function validateReg()
+{
+		var myform=document.forms[0];
+		var firstName=myform.firstName;
+		if(firstName.value.length==0)
+		{
+		alert("pls eneter firstName");
+		firstName.focus();
+		return false;
+		}
+		var lastName=myform.lastName;
+		if(lastName.value.length==0)
+		{
+		alert("pls eneter lastName");
+		lastName.focus();
+		return false;
+		}
+}
+
+</script>

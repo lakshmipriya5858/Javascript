@@ -1,0 +1,80 @@
+<form action="success.html">
+firstNme:
+
+<input type="text" name="firstName"/>
+<span id="firstNameError"</span><br/>
+LastNmae:
+<input type="text" name="lastName"/>
+<span id="lastNameError"</span><br/>
+age:
+<input type="text" name="age"/>
+<span id="ageError"</span><br/>
+<input type="submit" value="submit" onclick="return validate()"/>
+</form>
+<script>
+function validate()
+{
+	var thisForm=document.forms[0];
+	var firstName=thisForm.firstName;
+	var firstNameFailedStatus;
+	var v1=document.getElementById("firstNameError");
+
+	if(firstNameFailedStatus=(firstName.value.length==0))
+	{
+v1.style.color="red";
+v1.innerHTML="enetr first name";
+}
+else
+{
+v1.innerHTML="";
+
+}
+var lastName=thisForm.lastName;
+	var lastNameFailedStatus;
+	var v2=document.getElementById("lastNameError");
+
+	if(lastNameFailedStatus=(lastName.value.length==0))
+	{
+v2.style.color="red";
+v2.innerHTML="enetr last name";
+}
+else
+{
+v2.innerHTML="";
+
+}
+var age=thisForm.age;
+	var ageFailedStatus;
+	var v3=document.getElementById("ageError");
+
+		if(ageFailedStatus=(age.value.length==0))
+	{
+v3.style.color="red";
+v3.innerHTML="enetr Age ";
+}
+else
+{
+v3.innerHTML="";
+
+}
+if(firstNameFailedStatus)
+{
+firstName.focus();
+return false;
+}
+
+else if(lastNameFailedStatus)
+{
+lastName.focus();
+return false;
+}
+
+else if(ageFailedStatus)
+{
+age.focus();
+return false;
+}
+
+
+}
+</script>

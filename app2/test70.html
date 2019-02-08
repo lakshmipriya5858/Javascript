@@ -1,0 +1,15 @@
+<p id="p1">initial content</p>
+<input type="button" value="sort" onclick="sortElements()"/>
+<input type="button" value="populate array content" onclick="readArrayContent()"/>
+<script>
+var elements=[100,"hello",89,90.8,true,56,"hey"];
+function readArrayContent()
+{
+document.getElementById("p1").innerHTML=elements.join(",");
+}
+function sortElements()
+{
+elements.sort();//based onAScii code sorting happening
+readArrayContent();
+}
+</script>
