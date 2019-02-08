@@ -1,0 +1,13 @@
+<script>
+				var test=function()
+				{
+						console.log("hello from test:");
+						return "hello";
+
+				}
+				 var i=test();
+				console.log(i);
+				console.log("...........................");
+				console.log(test());
+				console.log("...........................");
+</script>

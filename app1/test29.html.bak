@@ -1,0 +1,12 @@
+<script>
+			var i=test();
+				 console.log(i);
+				 console.log("...........................");
+				 console.log(test());
+				 console.log("...........................");
+function test()
+{
+console.log("hello");
+}
+//js doesnt have any return type but it can return any value
+}</script>

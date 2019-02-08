@@ -1,0 +1,15 @@
+<script>
+				var i=test('abc');
+				 console.log(i);
+				 console.log("...........................");
+				 console.log(test(20,30));
+				 console.log("...........................");
+				console.log(test("helo",30,false));
+				function test(a,b,c)
+				{
+						console.log("hello");
+						//retuen 10;
+						return "abc";
+				}
+				//20 and 30 assigning to ab or bc
+</script>

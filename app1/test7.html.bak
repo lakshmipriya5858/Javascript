@@ -1,0 +1,11 @@
+<script>
+var i= '';
+if(i)
+{
+console.log("from if ");//from if in console
+}
+else
+{
+console.log("from else");
+}
+</script>

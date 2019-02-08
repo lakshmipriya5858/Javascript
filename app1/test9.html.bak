@@ -1,0 +1,12 @@
+<script>
+var i= null;
+if(i)
+{
+console.log("from if ");
+}
+else
+{
+console.log("from else");
+}
+//null considered as a false
+</script>

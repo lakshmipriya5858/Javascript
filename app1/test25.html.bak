@@ -1,0 +1,16 @@
+<input type="button" value="button" onclick="test()"/>
+<script>
+		function test()
+		{
+				if(true)
+				{
+				let i=10;
+				}
+				 console.log(i);
+		}
+		//error
+		//let keyword local to current block
+		ishld be used witthin the if (block)
+		{
+		}
+</script>

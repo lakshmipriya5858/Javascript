@@ -1,0 +1,12 @@
+<script>
+var i= 35;
+if(i=='35')
+{
+console.log("from if ");
+}
+else
+{
+console.log("from else");
+}
+//checking content
+</script>
